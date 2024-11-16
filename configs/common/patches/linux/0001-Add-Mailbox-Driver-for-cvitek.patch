@@ -16,7 +16,7 @@ diff --git a/drivers/mailbox/Kconfig b/drivers/mailbox/Kconfig
 index 05b1009e2820..68803d6845d7 100644
 --- a/drivers/mailbox/Kconfig
 +++ b/drivers/mailbox/Kconfig
-@@ -236,6 +236,14 @@ config SUN6I_MSGBOX
+@@ -271,6 +271,14 @@ config SUN6I_MSGBOX
  	  various Allwinner SoCs. This mailbox is used for communication
  	  between the application CPUs and the power management coprocessor.
  
@@ -35,8 +35,8 @@ diff --git a/drivers/mailbox/Makefile b/drivers/mailbox/Makefile
 index 2e06e02b2e03..2a23e3acb1de 100644
 --- a/drivers/mailbox/Makefile
 +++ b/drivers/mailbox/Makefile
-@@ -54,3 +54,5 @@ obj-$(CONFIG_SUN6I_MSGBOX)	+= sun6i-msgbox.o
- obj-$(CONFIG_SPRD_MBOX)		+= sprd-mailbox.o
+@@ -67,3 +67,5 @@ obj-$(CONFIG_SUN6I_MSGBOX)	+= sun6i-msgbox.o
+ obj-$(CONFIG_QCOM_CPUCP_MBOX)	+= qcom-cpucp-mbox.o
  
  obj-$(CONFIG_QCOM_IPCC)		+= qcom-ipcc.o
 +

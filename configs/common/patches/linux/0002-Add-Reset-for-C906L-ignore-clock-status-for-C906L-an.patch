@@ -13,8 +13,8 @@ Subject: [PATCH 2/4] Add Reset for C906L, ignore clock status for C906L, and
 
 diff --git a/drivers/clk/cvitek/clk-cv181x.c b/drivers/clk/cvitek/clk-cv181x.c
 index 561fb1fcb832..3afce30df616 100644
---- a/drivers/clk/cvitek/clk-cv181x.c
-+++ b/drivers/clk/cvitek/clk-cv181x.c
+--- a/drivers/clk/sophgo/clk-cv181x.c
++++ b/drivers/clk/sophgo/clk-cv181x.c
 @@ -1645,7 +1645,7 @@ static struct cv181x_hw_clock cv181x_clks[] = {
  		REG_CLK_BYP_1, 7,
  		REG_CLK_SEL_0, 24,
